@@ -2,7 +2,7 @@
 
 var Sails = require('sails'),
     sails,
-    uuid = require('node-uuid'),
+    uuid = require('uuid'),
     passwordhash = require('password-hash-and-salt'),
     Promise = require('bluebird');
 

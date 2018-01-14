@@ -5,9 +5,9 @@ var cc          = require('config-multipaas'),
 var config      = cc(),
     app         = restify.createServer()
 
-app.use(restify.queryParser())
-app.use(restify.CORS())
-app.use(restify.fullResponse())
+app.use(restify.plugins.queryParser());
+//app.use(restify.CORS({origins:'http://localhost/', credentials: false, headers: ['Accept']}));
+app.use(restify.plugins.fullResponse());
 
 // Routes
 app.get('/status', function (req, res, next)
@@ -23,7 +23,7 @@ app.get('/', function (req, res, next)
   res.end(data.toString().replace(/host:port/g, req.header('Host')));
 });
 
-app.get(/\/(css|js|img)\/?.*/, restify.serveStatic({directory: './static/'}));
+app.get(/\/(css|js|img)\/?.*/, restify.plugins.serveStatic({directory: './static/'}));
 
 app.listen(config.get('PORT'), config.get('IP'), function () {
   console.log( "Listening on " + config.get('IP') + ", port " + config.get('PORT') )
