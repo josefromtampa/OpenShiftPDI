@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for models\UserForm.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">models\UserForm.js</span></h1>
+    <h2>
+        Statements: <span class="metric">11.11% <small>(4 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">11.11% <small>(4 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">models/</a> &#187; UserForm.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+* UserForm.js
+*
+* @description :: Model for user forms with data.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
+&nbsp;
+var extend = require('extend');
+var MongoFactory = require('../lib/factories/MongoFactory.js');
+&nbsp;
+module.exports = {
+&nbsp;
+    attributes: {
+&nbsp;
+        user: {
+            type: 'json',
+            required: true
+        },
+&nbsp;
+        name: {
+            type: 'string',
+            required: true
+        },
+&nbsp;
+        identifier: {
+            type: 'string'
+        },
+&nbsp;
+        progress: {
+            type: 'json'
+        },
+        
+        status: {
+            type: 'json'
+        },
+&nbsp;
+        /* form identifier */
+        form: {
+            type: 'json'
+        },
+&nbsp;
+        gps: {
+            type: 'json'
+        },
+&nbsp;
+        outline: {
+            type: 'json'
+        },
+&nbsp;
+        submitDate: {
+            type: 'datetime'
+        }
+&nbsp;
+&nbsp;
+    },
+&nbsp;
+    class: <span class="fstat-no" title="function not covered" >function (user, form, outline, status, name, identifier, progress, gps) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.user = user || null;</span>
+<span class="cstat-no" title="statement not covered" >        this.name = name || form ? form.name + ' - ' + (new Date()).toLocaleDateString() : '';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var timeStamp = new Date();</span>
+        // default identifier
+<span class="cstat-no" title="statement not covered" >        var defaultIdentifier = form &amp;&amp; user ? form.name + ' - ' + user.username.toUpperCase() + ' - '</span>
+                                                          + timeStamp.toLocaleString().replace(/\//ig, '-').replace(/,/ig, '').replace(/:/ig, '-')
+                                            : '';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.identifier = identifier || defaultIdentifier;</span>
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.form = form || null;</span>
+<span class="cstat-no" title="statement not covered" >        this.status = status || null;</span>
+<span class="cstat-no" title="statement not covered" >        this.gps = gps || null;</span>
+<span class="cstat-no" title="statement not covered" >        this.progress = progress || {</span>
+            percent: 0,
+            progressPosition: 0,
+            currentPosition: 0
+        };
+<span class="cstat-no" title="statement not covered" >        this.outline = outline || null;</span>
+<span class="cstat-no" title="statement not covered" >        this.submitDate = null;</span>
+    },
+&nbsp;
+    flatten: <span class="fstat-no" title="function not covered" >function (userForm) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        try {</span>
+<span class="cstat-no" title="statement not covered" >            if (userForm.form) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                var userFormLight = _.omit(userForm, 'form');</span>
+<span class="cstat-no" title="statement not covered" >                var outline = {</span>
+                    sections: []
+                };
+<span class="cstat-no" title="statement not covered" >                var cardOutline = null;</span>
+<span class="cstat-no" title="statement not covered" >                var index = 0;</span>
+                
+<span class="cstat-no" title="statement not covered" >                var cards = _.map(userForm.form.sections, <span class="fstat-no" title="function not covered" >function (section) {</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    cardOutline = [];</span>
+<span class="cstat-no" title="statement not covered" >                    var sectionCards = _.map(section.cards, <span class="fstat-no" title="function not covered" >function (card) {</span></span>
+                        // add section to card for tracking
+<span class="cstat-no" title="statement not covered" >                        card.section = _.omit(section, 'cards');</span>
+<span class="cstat-no" title="statement not covered" >                        cardOutline.push({ id: card.id, title: card.title, index: index++ });</span>
+<span class="cstat-no" title="statement not covered" >                        return card;</span>
+&nbsp;
+                    });// should return array of cards
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    outline.sections.push({ id: section.id, title: section.title, cards: cardOutline });</span>
+<span class="cstat-no" title="statement not covered" >                    return sectionCards;</span>
+&nbsp;
+                }); // should return array of card arrays
+                                   
+<span class="cstat-no" title="statement not covered" >                userFormLight.form = _.omit(userForm.form, 'sections');</span>
+<span class="cstat-no" title="statement not covered" >                userFormLight.form.cards = _.flatten(cards);</span>
+<span class="cstat-no" title="statement not covered" >                userFormLight.outline = outline;</span>
+&nbsp;
+                                            
+<span class="cstat-no" title="statement not covered" >                return userFormLight;</span>
+&nbsp;
+            } else {
+<span class="cstat-no" title="statement not covered" >                return null;</span>
+            }// if-else
+&nbsp;
+&nbsp;
+        } catch (e) {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            sails.log.error('UserForm.flatten() Exception - ' + e.message);</span>
+<span class="cstat-no" title="statement not covered" >            return null;</span>
+&nbsp;
+        }// try-catch
+    }
+&nbsp;
+};
+&nbsp;
+// extend with mongofactory
+extend(false, module.exports, MongoFactory);
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Aug 25 2015 12:13:43 GMT-0400 (Eastern Daylight Time)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

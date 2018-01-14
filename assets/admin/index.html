@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="ibhs">
+<head>
+	<meta charset="UTF-8">
+	<title>IBHS | Admin</title>
+
+	<link rel="stylesheet" href="lib.css">
+
+	<link href='//fonts.googleapis.com/css?family=Lato:400,300,700'
+				rel='stylesheet'
+				type='text/css'>
+
+	<link rel="stylesheet"
+				type="text/css"
+				href="ibhs.css">
+
+	
+
+	<script src="lib.js"></script>
+
+	<script src="ibhs.templates.js"></script>
+	<script src="ibhs.js"></script>
+
+    
+
+</head>
+
+<body class="ibhs ibhs-view ibhs-pane-dual ibhs-theme-01 {{$state.current.name | laicosUiFilterKebab}}">
+	<div ui-view="menu"
+			 class="ibhs-nav ibhs-pane"></div>
+	<div ui-view="content"
+			 class="ibhs-anim ibhs-pane"></div>
+	<ibhs-busy ng-show="isBusy">
+		<md-progress-circular md-mode="indeterminate"
+													class="multi-color"></md-progress-circular>
+	</ibhs-busy>
+</body>
+
+</html>
